@@ -1,0 +1,185 @@
+@import"https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    height: 100vh;
+    background-image: url(/assets/h2-Be8gG5da.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Libre Baskerville, sans-serif;
+    font-weight: 800;
+    color: #0fc;
+    overflow: hidden
+}
+
+.assistant-card {
+    background: #001428e6;
+    border: 2px solid #00ffcccc;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0fc9;
+    padding: 40px;
+    width: 90%;
+    max-width: 550px;
+    text-align: center
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #0fc;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00ffcc
+}
+
+.status-box {
+    background: #00ffcc1a;
+    border: 1px solid rgba(0, 255, 204, .5);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #f0f0f0;
+    margin-top: 10px;
+    min-height: 60px;
+    text-align: left;
+    box-shadow: inset 0 0 15px #00ffcc4d
+}
+
+.input-area {
+    margin: 20px 0
+}
+
+.input-area form {
+    display: flex;
+    gap: 10px
+}
+
+.symptom-input {
+    flex: 1;
+    background: #00ffcc1a;
+    border: 1px solid rgba(0, 255, 204, .5);
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #f0f0f0;
+    font-size: 14px;
+    box-shadow: inset 0 0 10px #0fc3;
+    transition: all .3s ease
+}
+
+.symptom-input:focus {
+    outline: none;
+    border-color: #0fcc;
+    box-shadow: inset 0 0 10px #0fc6
+}
+
+.symptom-input::placeholder {
+    color: #f0f0f080
+}
+
+.submit-button {
+    background: #0fc3;
+    border: 1px solid rgba(0, 255, 204, .6);
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #0fc;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease
+}
+
+.submit-button:hover:not(:disabled) {
+    background: #00ffcc4d;
+    box-shadow: 0 0 15px #0fc6
+}
+
+.submit-button:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+.mic-area {
+    margin: 20px 0
+}
+
+.mic-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #0fc, #0fc3);
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0 20px #0fcc;
+    transition: all .3s ease
+}
+
+.mic-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #0fc
+}
+
+.mic-button:active {
+    transform: scale(.9)
+}
+
+.stop-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #0fc, #0fc3);
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0 20px #0fcc;
+    transition: all .3s ease;
+    margin-left: 69px
+}
+
+.stop-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #f66c
+}
+
+.stop-button:active {
+    transform: scale(.95)
+}
+
+.footer-note {
+    font-size: 12px;
+    color: #ffffffb3;
+    margin-top: 20px
+}
+
+strong {
+    color: #f6f
+}
+
+@keyframes glowing-border {
+    0% {
+        box-shadow: 0 0 10px #0fc
+    }
+
+    50% {
+        box-shadow: 0 0 30px #0fc
+    }
+
+    to {
+        box-shadow: 0 0 10px #0fc
+    }
+}
+
+.assistant-card {
+    animation: glowing-border 3s infinite
+}
